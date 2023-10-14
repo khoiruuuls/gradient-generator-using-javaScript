@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gradient Generator</title>
+        <link rel="stylesheet" href="/style.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <div class="colors">
+                <input type="color" value="#0E21A0" id="color-a" />
+                <input type="color" value="#000000" id="color-b" />
+            </div>
+
+            <div class="buttons">
+                <button class="active" onclick="setDirection('to top',  this)">
+                    <i class="ri-arrow-up-line"></i>
+                </button>
+                <button onclick="setDirection('to bottom',  this)">
+                    <i class="ri-arrow-down-line"></i>
+                </button>
+                <button onclick="setDirection('to right',  this)">
+                    <i class="ri-arrow-right-line"></i>
+                </button>
+                <button onclick="setDirection('to left',  this)">
+                    <i class="ri-arrow-left-line"></i>
+                </button>
+                <button onclick="setDirection('to top right',  this)">
+                    <i class="ri-arrow-right-up-line"></i>
+                </button>
+                <button onclick="setDirection('to bottom left',  this)">
+                    <i class="ri-arrow-left-down-line"></i>
+                </button>
+                <button onclick="setDirection('to bottom right',  this)">
+                    <i class="ri-arrow-right-down-line"></i>
+                </button>
+                <button onclick="setDirection('to top left',  this)">
+                    <i class="ri-arrow-left-up-line"></i>
+                </button>
+            </div>
+            <button id="submit" onclick="generateCode()">Generate</button>
+            <div class="output">
+                <textarea name="" id="code" rows="2"></textarea>
+                <button id="copy" onclick="copyText()">Copy</button>
+            </div>
+        </div>
+        <script src="/main.js"></script>
+    </body>
+</html>

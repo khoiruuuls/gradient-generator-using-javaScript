@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+body {
+    height: 100vh;
+    font-family: "poppins";
+}
+
+.container {
+    background-color: #ffffff;
+    width: 400px;
+    padding: 50px 30px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
+}
+
+.colors {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+input[type="color"] {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    width: 100px;
+    height: 45px;
+    cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border-radius: 20px;
+    border: none;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.buttons button {
+    height: 35px;
+    width: 35px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.buttons .active {
+    border: 2px solid black;
+    background-color: #ffb000;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+}
+
+.buttons button:hover {
+    border: 2px solid black;
+    background-color: #ffcf9d;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+}
+
+#submit {
+    background-color: #102c57;
+    padding: 10px 70px;
+    border-radius: 20px;
+    color: white;
+    display: block;
+    margin: 0 auto 30px auto;
+    cursor: pointer;
+}
+
+.output {
+    background-color: #f0f2fc;
+}
+
+#code {
+    font-family: "poppins";
+    width: 100%;
+    height: 20vh;
+    resize: none;
+    padding: 20px 20px;
+    background-color: transparent;
+}
+
+#copy {
+    background-color: #102c57;
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: white;
+    position: relative;
+    left: 70%;
+    bottom: 10px;
+    cursor: pointer;
+}
